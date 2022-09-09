@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Including Bootstrap Icons in HTML</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Font Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <style>
+      /* phan 1 */
+      .border-bottom-h4 {
+        padding-bottom: 20px;
+        border-bottom: 2px solid gray;
+      }
+      .flex-flag {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid gray;
+      }
+      /* phan 2 */
+      .flex-people {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      /* phan62 3 */
+      .flex-sc-3 {
+        display: flex;
+        flex-direction: row;
+      }
+      /* phan 4 */
+      .flex-question-4 {
+        display: flex;
+
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      /* phan5  */
+      .flex-timeline-5 {
+        border-bottom: 1px dotted gray;
+        padding-top: 10px;
+        display: flex;
+        gap: 20px;
+      }
+      .se-border {
+        border-top: 4px solid blue;
+        border-left: 4px solid blue;
+      }
+      .se1-border {
+        border-top: 4px solid blue;
+        border-left: 4px solid blue;
+      }
+      .se2-border {
+        border-top: 4px solid blue;
+        border-left: 4px solid blue;
+        border-bottom: 4px solid blue;
+      }
+      .se3-border {
+        border-top: 4px solid blue;
+        border-left: 4px solid blue;
+        border-bottom: 4px solid blue;
+      }
+      .se4-border {
+        border: 4px solid blue;
+      }
+      /* css phan tablet */
+      @media (min-width: 768px) and (max-width: 992px) {
+        .se-border {
+          border-top: 4px solid blue;
+          border-left: 4px solid blue;
+          border-right: 4px solid blue;
+          border-bottom: 4px solid blue;
+        }
+        .se1-border {
+          border-left: 4px solid blue;
+          border-right: 4px solid blue;
+          border-bottom: 4px solid blue;
+        }
+        .se2-border {
+          border-left: 4px solid blue;
+          border-right: 4px solid blue;
+        }
+        .se3-border {
+          border-left: 4px solid blue;
+          border-right: 4px solid blue;
+        }
+        .se4-border {
+          border-left: 4px solid blue;
+          border-right: 4px solid blue;
+          border-bottom: 4px solid blue;
+        }
+        /* phan 1 */
+        .flex-flag {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        /* phan 2 */
+        .flex-people {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .i-tablet-center {
+          align-self: center;
+        }
+        /* phan 3 */
+        .flex-sc-3 {
+          display: flex;
+          flex-direction: column;
+        }
+        /* phan 4 */
+        .flex-question-4 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        /* phan 5 */
+        .flex-timeline-5 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+      /* phan mobile */
+      @media screen and (max-width: 768px) {
+        .se-border {
+          border-top: 4px solid blue;
+          border-left: 4px solid blue;
+          border-right: 4px solid blue;
+          border-bottom: 4px solid blue;
+        }
+        .se1-border {
+          border-left: 4px solid blue;
+          border-right: 4px solid blue;
+          border-bottom: 4px solid blue;
+        }
+        .se2-border {
+          border-left: 4px solid blue;
+          border-right: 4px solid blue;
+        }
+        .se3-border {
+          border-left: 4px solid blue;
+          border-right: 4px solid blue;
+        }
+        .se4-border {
+          border-left: 4px solid blue;
+          border-right: 4px solid blue;
+          border-bottom: 4px solid blue;
+        }
+        /* phan 1 */
+        .flex-flag {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        /* phan 2 */
+        .flex-people {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .i-tablet-center {
+          align-self: center;
+        }
+        /* phan 3 */
+        .flex-sc-3 {
+          display: flex;
+          flex-direction: column;
+        }
+
+        /* phan 4 */
+        .flex-question-4 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        /* phan 5 */
+        .flex-timeline-5 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a class="btn btn-primary my-3 px-5" href="./index.html" role="button">
+        Về Trang
+      </a>
+      <div class="row">
+        <div class="- container container-md col-lg-9">
+          <div class="row row-md">
+            <!-- phan dau goals -->
+            <div class="se-border col-lg-9 col-md-12 p-2">
+              <h4 class="border-bottom-h4">goals</h4>
+              <div class="flex-flag">
+                <div class="i-tablet-center h3 ps-4">
+                  <i class="bi bi-flag-fill"></i>
+                </div>
+                <div>
+                  <p class="mb-0 h5"><strong> Goal 1</strong></p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eius id cor
+                  </p>
+                </div>
+              </div>
+              <div class="flex-flag">
+                <div class="i-tablet-center h3 ps-4">
+                  <i class="bi bi-flag-fill"></i>
+                </div>
+                <div>
+                  <p class="mb-0 h5"><strong> Goal 2</strong></p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eius id cor
+                  </p>
+                </div>
+              </div>
+              <div class="flex-flag">
+                <div class="i-tablet-center h3 ps-4">
+                  <i class="bi bi-flag-fill"></i>
+                </div>
+                <div>
+                  <p class="mb-0 h5"><strong> Goal 3</strong></p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eius id cor
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- phan 2 -->
+            <div class="se1-border col-lg-3 col-md-12 p-2">
+              <h4 class="border-bottom-h4">Team</h4>
+              <div class="flex-people">
+                <div class="i-tablet-center h3 ps-4">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div>
+                  <p class="mb-0"><strong>Menber 01 </strong></p>
+                  <p>Name:...</p>
+                </div>
+              </div>
+              <div class="flex-people">
+                <div class="i-tablet-center h3 ps-4">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div>
+                  <p class="mb-0"><strong>Menber 01 </strong></p>
+                  <p>Name:...</p>
+                </div>
+              </div>
+              <div class="flex-people">
+                <div class="i-tablet-center h3 ps-4">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div>
+                  <p class="mb-0"><strong>Menber 01 </strong></p>
+                  <p>Name:...</p>
+                </div>
+              </div>
+              <div class="flex-people">
+                <div class="i-tablet-center h3 ps-4">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div>
+                  <p class="mb-0"><strong>Menber 01 </strong></p>
+                  <p>Name:...</p>
+                </div>
+              </div>
+            </div>
+            <!-- phan 3//////////////////// -->
+            <div class="se2-border col-lg-9 col-md-12 p-2">
+              <h4 class="border-bottom-h4">Scope</h4>
+              <div class="flex-sc-3">
+                <div>
+                  <p class="mb-3 h3"><strong>In </strong></p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <div>
+                  <p class="mb-3 h3"><strong>Out </strong></p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- phan 4 -->
+            <div class="se3-border col-lg-3 col-md-12 p-2">
+              <h4 class="border-bottom-h4">Primary</h4>
+              <div class="flex-question-4 pb-4">
+                <div class="i-tablet-center">
+                  <i class="bi bi-question-circle-fill h3"></i>
+                </div>
+                <div>
+                  Lorem ipsum dolor adipisicing elit. exercitationem, dicta
+                  veritatis eum?
+                </div>
+              </div>
+              <div class="flex-question-4">
+                <div class="i-tablet-center">
+                  <i class="bi bi-question-circle-fill h3"></i>
+                </div>
+                <div>
+                  Lorem ipsum dolor adipisicing elit. exercitationem, dicta
+                  veritatis eum?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- phan 5timeline////////////////////////////////////// -->
+        <div class="se4-border col-lg-3 col-md-12 p-2">
+          <h4 class="border-bottom-h4">Timeline</h4>
+          <!-- so 1 -->
+          <div class="flex-timeline-5">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-1-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p class="mb-0"><strong>Project Start </strong></p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <!-- so 2 -->
+          <div class="flex-timeline-5">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-2-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p class="mb-0"><strong>Project Start </strong></p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <!-- so 3 -->
+          <div class="flex-timeline-5">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                class="bi bi-3-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p class="mb-0"><strong>Project Start </strong></p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <!-- so 4 -->
+          <div class="flex-timeline-5">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                class="bi bi-4-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM7.519 5.057c-.886 1.418-1.772 2.838-2.542 4.265v1.12H8.85V12h1.26v-1.559h1.007V9.334H10.11V4.002H8.176c-.218.352-.438.703-.657 1.055ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p class="mb-0"><strong>Project Start </strong></p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <!-- so 5 -->
+          <div class="flex-timeline-5">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                class="bi bi-5-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.006 4.158c1.74 0 2.924-1.119 2.924-2.806 0-1.641-1.178-2.584-2.56-2.584-.897 0-1.442.421-1.612.68h-.064l.193-2.344h3.621V4.002H5.791L5.445 8.63h1.149c.193-.358.668-.809 1.435-.809.85 0 1.582.604 1.582 1.57 0 1.085-.779 1.682-1.57 1.682-.697 0-1.389-.31-1.53-1.031H5.276c.065 1.213 1.149 2.115 2.72 2.115Z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p class="mb-0"><strong>Project Start </strong></p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <!-- so 6 -->
+          <div class="flex-timeline-5">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                class="bi bi-6-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.21 3.855c-1.868 0-3.116 1.395-3.116 4.407 0 1.183.228 2.039.597 2.642.569.926 1.477 1.254 2.409 1.254 1.629 0 2.847-1.013 2.847-2.783 0-1.676-1.254-2.555-2.508-2.555-1.125 0-1.752.61-1.98 1.155h-.082c-.012-1.946.727-3.036 1.805-3.036.802 0 1.213.457 1.312.815h1.29c-.06-.908-.962-1.899-2.573-1.899Zm-.099 4.008c-.92 0-1.564.65-1.564 1.576 0 1.032.703 1.635 1.558 1.635.868 0 1.553-.533 1.553-1.629 0-1.06-.744-1.582-1.547-1.582Z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p class="mb-0"><strong>Project Start </strong></p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <!-- so 7 -->
+          <div class="flex-timeline-5">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                class="bi bi-7-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM5.37 5.11h3.972v.07L6.025 12H7.42l3.258-6.85V4.002H5.369v1.107Z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p class="mb-0"><strong>Project Start </strong></p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

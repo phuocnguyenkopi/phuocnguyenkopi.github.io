@@ -1,0 +1,44 @@
+@media (min-width: 768px) and (max-width: 992px) {
+  /* phần navbar */
+  .text-nav {
+    display: none;
+  }
+  .text-nav {
+    display: none;
+  }
+  /* phần chư giữa ảnh banner */
+  .text-banner {
+    left: 36%;
+  }
+  /* mục tiêu///////////////// */
+  .target-info-left {
+    padding: 0px;
+  }
+  /* phan chung chi  */
+  .cer-flex {
+    flex-direction: column;
+  }
+  .cer-img {
+    width: auto;
+  }
+  .cer-database {
+    padding-right: 350px;
+  }
+  #grid-cer {
+    padding: 20px;
+  }
+  /* du an////////////// */
+  .flex-text-project {
+    font-size: 11px;
+  }
+  tr td:first-child {
+    width: auto;
+  }
+  td {
+    padding: 3px;
+  }
+  #grid-project {
+    padding: 20px;
+  }
+}
+/* md */
